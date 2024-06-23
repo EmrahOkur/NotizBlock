@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notizblock</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="render()">
+    <header class="header">
+        <img src="./img/notizblock.png">
+        <h1>Notizblock</h1>
+    </header>
+
+    <section class="notecontainer">
+        <input type="text" id="notiz" placeholder="Gebe eine Notiz ein...">
+        <textarea name="text" id="anmerkung" placeholder="Anmerkung..."></textarea>
+        <button onclick="addnoteall()" class="button"><b>Notiz Hinzufügen</b></button>
+    </section>
+    <div class="trashdiv">
+        <img onclick="opengarbage()" class="trash-icon" src="./img/wiederherstellen.png">
+    </div>
+
+    <section id="note_container">
+    </section>
+  
+        
+    <div class="card-position">
+
+        <div>
+            <div id="content"></div>
+        </div> 
+        <div id="garbage1" class="garbage d-none">
+           <img class="trash-icon" onclick="closeGarbage()" src="./img/x.png">
+           <div><h2>Papierkorb</h2></div>
+           <div id="garbage">
+
+                <div class="garbage-content">
+                   
+                </div>
+
+            </div>
+        </div>
+   
+    
+</body>
+</html>
